@@ -49,7 +49,7 @@ const catBySlug = (slug: string) => {
 };
 
 export const seedPosts: SeedPost[] = [
-  ["intro-axiom-1-5", "Introducing the new ice7.studio", "product", true, "2026-07-14"],
+  ["new-studio-site", "Introducing the new ice7.studio", "product", true, "2026-07-14"],
   ["shipping-vector-search", "How we shipped vector search in six weeks", "engineering", true, "2026-07-08"],
   ["design-system-tokens", "Rebuilding our design system around tokens", "design", true, "2026-06-28"],
   ["series-b-announcement", "ice7 studio opens a second studio location", "company", true, "2026-06-20"],

@@ -94,7 +94,7 @@ const Inner = ({ children, title, description }: Props) => {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium text-foreground truncate">Demo admin</p>
-              <p className="text-xs text-muted-foreground truncate">demo@axiom.ai</p>
+              <p className="text-xs text-muted-foreground truncate">demo@ice7.studio</p>
             </div>
             <Link to="/" aria-label="Exit demo" title="Exit demo" className="p-2 text-muted-foreground hover:text-foreground transition-colors">
               <Logout03Icon className="w-[18px] h-[18px]" />

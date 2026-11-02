@@ -127,7 +127,7 @@ const AdminLayoutContent = ({
                 {userName}
               </p>
               <p className="text-xs text-muted-foreground truncate">
-                {user?.email || "admin@axiom.ai"}
+                {user?.email || "admin@ice7.studio"}
               </p>
             </div>
             
