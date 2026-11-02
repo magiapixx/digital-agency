@@ -4,45 +4,45 @@ import testimonialAvatar from "@/assets/testimonial-avatar.webp";
 
 const testimonials = [
   {
-    quote: "The missing layer for enterprise AI.",
-    description: "AxiomAI gave us centralized governance without slowing innovation.",
-    author: "VP of Technology",
-    company: "Global Financial Services Company",
+    quote: "Our best rebrand decision yet.",
+    description: "ice7 studio gave us a brand and website that finally match the quality of our product.",
+    author: "Marketing Director",
+    company: "Northwind Retail",
     rating: 5,
   },
   {
-    quote: "Built for real enterprise constraints.",
-    description: "Security, compliance, and scale were clearly first-class priorities.",
-    author: "Director of AI",
-    company: "Healthcare Enterprise",
+    quote: "Shipped in six weeks.",
+    description: "From kickoff to launch in six weeks — fast without ever feeling rushed.",
+    author: "Founder & CEO",
+    company: "Loop Health",
     rating: 5,
   },
   {
-    quote: "Collaboration finally works.",
-    description: "AxiomAI enabled teams across departments to share models and insights seamlessly.",
-    author: "Director of Data Science",
-    company: "Technology Services Company",
+    quote: "Traffic doubled in three months.",
+    description: "The SEO and performance work paid for itself almost immediately.",
+    author: "Head of Growth",
+    company: "Fieldnote SaaS",
     rating: 5,
   },
   {
-    quote: "Transformed our AI operations.",
-    description: "We reduced deployment time by 80% while maintaining full compliance.",
-    author: "CTO",
-    company: "Fortune 500 Retailer",
+    quote: "They feel like part of our team.",
+    description: "One dedicated crew that knows our brand inside out and keeps shipping improvements.",
+    author: "VP Marketing",
+    company: "Cobalt Finance",
     rating: 5,
   },
   {
-    quote: "Enterprise-grade from day one.",
-    description: "Finally a platform that understands the complexities of regulated industries.",
-    author: "Head of Innovation",
-    company: "Insurance Corporation",
+    quote: "Design and code under one roof.",
+    description: "No handoff gaps, no finger-pointing. What they design, they build — and it works.",
+    author: "Product Lead",
+    company: "Brightpath",
     rating: 5,
   },
   {
-    quote: "Seamless integration experience.",
-    description: "AxiomAI connected with our existing infrastructure without any friction.",
-    author: "VP Engineering",
-    company: "Manufacturing Leader",
+    quote: "Conversion up 40%.",
+    description: "The new site looks great and sells better. Win-win.",
+    author: "Managing Director",
+    company: "Harbor & Co",
     rating: 5,
   },
 ];
@@ -59,19 +59,19 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <h3 className="text-2xl md:text-3xl lg:text-[48px] lg:leading-none font-medium text-foreground leading-[1.2] mb-8 max-w-4xl mx-auto">
-            "AxiomAI is by far the best enterprise AI platform I have ever used"
+            "ice7 studio rebuilt our brand and website — organic traffic doubled within three months"
           </h3>
           <div className="flex flex-col items-center gap-2">
             <div className="w-16 h-16 rounded-full bg-muted overflow-hidden">
-              <img 
-                src={testimonialAvatar} 
-                alt="Martha Punla"
+              <img
+                src={testimonialAvatar}
+                alt="Maya Lindqvist"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="flex flex-col items-center">
-              <p className="text-base font-medium text-foreground">Aurora Greenwich</p>
-              <p className="text-sm text-muted-foreground">VP Marketing, Tesla</p>
+              <p className="text-base font-medium text-foreground">Maya Lindqvist</p>
+              <p className="text-sm text-muted-foreground">Marketing Director, Northwind Retail</p>
             </div>
           </div>
         </motion.div>
