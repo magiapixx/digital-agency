@@ -5,9 +5,9 @@ import { Check, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 const PricingSection = () => {
   const [isAnnual, setIsAnnual] = useState(true);
-  const starterFeatures = ["Access to core AI models", "Up to 5 team members", "Basic compliance tools", "Community support", "Standard integrations"];
-  const coreFeatures = ["Access to all AI model integrations", "Full team management", "Compliance and monitoring controls", "Standard cross-organization support", "Email and dedicated support"];
-  const customFeatures = ["Everything in Enterprise Core, plus SSO/SAML", "Custom models and VPC or on-prem deployment", "Advanced security (PII on content filtering)", "Volume discounts and unlimited teams", "Dedicated support with live chat"];
+  const starterFeatures = ["Website hosting & maintenance", "Up to 3 design updates per month", "Basic SEO & uptime monitoring", "Monthly performance report", "Email support"];
+  const coreFeatures = ["Dedicated design & development hours", "Ongoing SEO & content support", "Conversion & analytics tracking", "Quarterly strategy session", "Priority support"];
+  const customFeatures = ["Everything in Growth, plus", "Brand identity & full redesigns", "Web app & e-commerce builds", "Dedicated project manager", "Guaranteed response-time SLA"];
   
   return (
     <section className="py-12 md:py-20 bg-background">
@@ -25,7 +25,7 @@ const PricingSection = () => {
               <p className="text-[12px] font-medium text-[#1F2420]">// Pricing //</p>
             </div>
             <h2 className="text-2xl md:text-3xl lg:text-[40px] font-medium text-foreground leading-tight">
-              Enterprise pricing, tailored to your needs
+              Plans that grow with your business
             </h2>
           </motion.div>
           
@@ -36,7 +36,7 @@ const PricingSection = () => {
             transition={{ delay: 0.1 }}
             className="text-muted-foreground lg:max-w-xs lg:text-right lg:pt-12"
           >
-            Choose the right plan for the pace and complexity of your organization.
+            Pick the level of support your project needs — upgrade any time.
           </motion.p>
         </div>
 
@@ -133,7 +133,7 @@ const PricingSection = () => {
               </div>
 
               <Button asChild variant="lime" className="w-full rounded-full">
-                <Link to="/contact">TALK TO SALES</Link>
+                <Link to="/contact">START A PROJECT</Link>
               </Button>
             </div>
 
@@ -171,7 +171,7 @@ const PricingSection = () => {
 
               <Button asChild variant="heroOutline" className="w-full bg-white text-foreground hover:bg-white/90 rounded-full py-2 pr-[2px] pl-6 relative justify-center">
                 <Link to="/contact">
-                  TALK TO SALES
+                  START A PROJECT
                   <span className="bg-foreground rounded-full p-2 absolute right-2">
                     <ArrowUpRight size={18} className="text-background" />
                   </span>
