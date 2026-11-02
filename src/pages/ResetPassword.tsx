@@ -107,7 +107,7 @@ const ResetPassword = () => {
             />
           </div>
           {/* Logo */}
-          <Link to="/" className="flex items-center mb-8 sm:mb-12 lg:mb-20">
+          <Link to="/" className="flex items-center mb-8 sm:mb-20 lg:mb-20">
             <Logo className="text-[22px]" />
           </Link>
 

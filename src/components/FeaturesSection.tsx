@@ -30,10 +30,10 @@ const meshComponents = {
   flow: FlowMesh
 };
 const FeaturesSection = () => {
-  return <section id="about" className="py-12 md:py-20 bg-background">
+  return <section id="about" className="py-24 md:py-36 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 mb-24">
           <div>
             <motion.div initial={{
             opacity: 0,

@@ -24,7 +24,7 @@ const features = [
 
 const EnterpriseSection = () => {
   return (
-    <section className="py-12 md:py-20 bg-background">
+    <section className="py-24 md:py-36 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div 

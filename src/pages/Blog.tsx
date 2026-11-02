@@ -198,7 +198,7 @@ const Blog = () => {
   const remainingPosts = posts?.slice(9) || [];
   return <div className="min-h-screen bg-background">
       <Header />
-      <main id="main-content" tabIndex={-1} className="container mx-auto px-4 pt-32 pb-12 md:pb-16">
+      <main id="main-content" tabIndex={-1} className="container mx-auto px-4 pt-44 pb-12 md:pb-28">
         {/* Hero Section */}
         <motion.div initial={{
         opacity: 0,
@@ -208,7 +208,7 @@ const Blog = () => {
         y: 0
       }} transition={{
         duration: 0.6
-      }} className="text-center mb-16">
+      }} className="text-center mb-24">
           <span className="inline-block mb-6 text-sm text-muted-foreground bg-muted/50 border border-border rounded-full py-[4px] px-[12px] font-light">
             ice7 studio journal
           </span>
@@ -230,7 +230,7 @@ const Blog = () => {
       }} transition={{
         duration: 0.6,
         delay: 0.1
-      }} className="mb-12">
+      }} className="mb-20">
           <div className="flex flex-col gap-4">
             {/* Search - top row, hidden on mobile */}
             <div className="hidden sm:flex justify-end">
@@ -332,7 +332,7 @@ const Blog = () => {
       }} transition={{
         duration: 0.6,
         delay: 0.2
-      }} className="mb-12 md:mb-16">
+      }} className="mb-20 md:mb-24">
             <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-6 md:mb-8">Latest Articles</h2>
             <div className="grid lg:grid-cols-2 gap-4">
               {/* Featured Large Card */}
@@ -462,7 +462,7 @@ const Blog = () => {
       }} transition={{
         duration: 0.6,
         delay: 0.3
-      }} className="mb-16 hidden md:block">
+      }} className="mb-24 hidden md:block">
             <h2 className="text-2xl font-semibold text-foreground mb-8">Recent Articles</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {recentPosts.map((post, index) => <motion.div key={post.id} initial={{

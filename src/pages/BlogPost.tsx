@@ -235,7 +235,7 @@ const BlogPost = () => {
     return (
       <div className="min-h-dvh bg-background">
         <Header />
-        <main id="main-content" tabIndex={-1} className="container mx-auto px-4 pt-32 pb-8">
+        <main id="main-content" tabIndex={-1} className="container mx-auto px-4 pt-44 pb-8">
           <div className="max-w-4xl mx-auto animate-pulse">
             <div className="h-6 bg-muted rounded w-20 mb-8" />
             <div className="h-12 bg-muted rounded w-full mb-4" />
@@ -257,7 +257,7 @@ const BlogPost = () => {
     return (
       <div className="min-h-dvh bg-background">
         <Header />
-        <main id="main-content" tabIndex={-1} className="container mx-auto px-4 pt-32 pb-16 text-center">
+        <main id="main-content" tabIndex={-1} className="container mx-auto px-4 pt-44 pb-28 text-center">
           <h1 className="text-3xl font-bold text-foreground mb-4">Article Not Found</h1>
           <p className="text-muted-foreground mb-8">
             The article you're looking for doesn't exist or has been removed.
@@ -277,7 +277,7 @@ const BlogPost = () => {
   return (
     <div className="min-h-dvh bg-background">
       <Header />
-      <main id="main-content" tabIndex={-1} className="container mx-auto px-4 pt-32 pb-8">
+      <main id="main-content" tabIndex={-1} className="container mx-auto px-4 pt-44 pb-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -329,7 +329,7 @@ const BlogPost = () => {
           </header>
 
           {/* Featured Image */}
-          <div className="mb-12 rounded-2xl overflow-hidden">
+          <div className="mb-20 rounded-2xl overflow-hidden">
             <img
               src={post.featured_image_url || blogAi1}
               alt={post.title}
