@@ -19,6 +19,8 @@ import RequireAdmin from "./components/auth/RequireAdmin";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import SkipLink from "./components/SkipLink";
+import PageLoader from "./components/PageLoader";
+import PageTransition from "./components/PageTransition";
 import DemoAdminBlog from "./pages/demo/DemoAdminBlog";
 import DemoAdminCategories from "./pages/demo/DemoAdminCategories";
 import DemoAdminUsers from "./pages/demo/DemoAdminUsers";
@@ -31,10 +33,12 @@ const App = () => (
       <AuthProvider>
         <Toaster />
         <Sonner />
+        <PageLoader />
         <BrowserRouter>
           <ScrollToTop />
           <SkipLink />
-          <Routes>
+          <PageTransition>
+            <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
@@ -83,7 +87,8 @@ const App = () => (
             <Route path="/demo/admin/users" element={<DemoAdminUsers />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
-          </Routes>
+            </Routes>
+          </PageTransition>
         </BrowserRouter>
       </AuthProvider>
     </TooltipProvider>
