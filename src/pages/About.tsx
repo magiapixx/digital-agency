@@ -9,33 +9,33 @@ import commitmentImage from "@/assets/about-commitment.jpg";
 const About = () => {
   const beliefs = [{
     icon: ColorsIcon,
-    title: "Control over chaos",
-    description: "Enterprises need centralized governance, not uncontrolled experimentation."
+    title: "Design with intent",
+    description: "Every pixel and every line of copy should serve a business goal — not just look good."
   }, {
     icon: AiSecurity01Icon,
-    title: "Security is non-negotiable",
-    description: "Data protection, compliance, and auditability must be built in — not added later."
+    title: "Craft is non-negotiable",
+    description: "Accessibility, performance, and polish are built in from the start — not patched on later."
   }, {
     icon: Layers01Icon,
-    title: "Scale without friction",
-    description: "AI should be accessible across teams while remaining consistent, compliant, and cost-efficient."
+    title: "Long-term partners",
+    description: "We win when our clients grow, so we build relationships measured in years, not deliverables."
   }];
   const stats = [{
-    value: "↓ 42%",
-    label: "AI costs",
-    description: "through centralized usage control and optimization"
+    value: "120+",
+    label: "projects",
+    description: "shipped for startups, scale-ups, and established brands"
   }, {
-    value: "3×",
-    label: "faster",
-    description: "time to production from pilot to enterprise deployment"
+    value: "6wk",
+    label: "average",
+    description: "from kickoff to a launched, production-ready website"
   }, {
-    value: "$1M+",
-    label: "saved",
-    description: "annually by enterprise customers through AI cost governance"
+    value: "98%",
+    label: "return",
+    description: "of our clients come back for a second project or ongoing plan"
   }, {
-    value: "24/7",
-    label: "visibility",
-    description: "into AI usage, performance, and cost"
+    value: "4.9★",
+    label: "rating",
+    description: "average client satisfaction across every engagement"
   }];
   return <div className="min-h-dvh bg-background">
       <Header />
@@ -60,7 +60,7 @@ const About = () => {
                   Our Mission
                 </h1>
                 <p className="text-base text-muted-foreground leading-relaxed max-w-lg">
-                  Bringing AI from experiment to competitive edge. Our vision: empower every enterprise to unlock AI's full potential while prioritizing security and governance.
+                  Designing and building the digital side of ambitious brands. Our vision: be the studio founders and marketing teams trust to make them look and perform their best.
                 </p>
               </motion.div>
               <motion.div initial={{
@@ -79,7 +79,7 @@ const About = () => {
 
             {/* Logo Strip */}
             <div className="mt-16 overflow-hidden">
-              <LogoStrip label="Trusted by global enterprises and industry leaders" />
+              <LogoStrip label="Tools and platforms we build on" />
             </div>
           </div>
         </section>
@@ -101,8 +101,8 @@ const About = () => {
             }}>
                 <h2 className="text-[24px] sm:text-[32px] md:text-[40px] font-medium text-foreground leading-[1.2]">
                   We believe{" "}
-                  <span className="text-orange-500">AI should accelerate innovation,</span>
-                  {" "}not introduce risk, opacity, or fragmentation. AxiomAI exists to make enterprise AI secure, governed, and scalable by design.
+                  <span className="text-orange-500">great digital experiences compound,</span>
+                  {" "}not happen by accident. ice7 studio exists to make world-class design and development accessible to teams of any size.
                 </h2>
               </motion.div>
               <motion.div initial={{
@@ -119,12 +119,12 @@ const About = () => {
             }} className="space-y-6">
                 <div>
                   <p className="text-[16px] font-medium mb-4 text-foreground">
-                    From experimentation to enterprise reality
+                    From scattered tools to a real digital presence
                   </p>
-                  <p className="text-muted-foreground leading-relaxed">Across industries, organizations struggle to move AI beyond isolated pilots. Teams adopt tools independently, governance lags behind, and leadership lacks visibility.
+                  <p className="text-muted-foreground leading-relaxed">Most teams juggle freelancers, templates, and tools that never quite fit together. Work stalls, brands drift, and growth leaks through the cracks.
 
 
-AxiomAI was created to solve this gap — to provide the missing control layer that turns scattered AI efforts into a coherent, enterprise-wide capability.</p>
+ice7 studio was created to close that gap — one dedicated team for strategy, design, and development, turning good ideas into digital products that perform.</p>
                 </div>
                 
               </motion.div>
@@ -164,7 +164,7 @@ AxiomAI was created to solve this gap — to provide the missing control layer t
                 <h3 className="text-[24px] sm:text-[28px] md:text-[36px] font-medium text-foreground mb-8">
                   What we believe
                 </h3>
-                <p className="text-muted-foreground mb-10 leading-relaxed">AxiomAI is built on several core principles that guide its development and functionality. These principles include adaptability, where the system learns and evolves based on user interactions, and transparency, ensuring that users understand how decisions are made.</p>
+                <p className="text-muted-foreground mb-10 leading-relaxed">ice7 studio is built on a few simple principles that guide every project we take on. We listen first, design with intent, and sweat the details — because that's what separates a site that works from one that wins.</p>
                 <div className="bg-[#F7F8F7] rounded-[24px] p-2 flex flex-col gap-2">
                   {beliefs.map((belief, index) => <motion.div key={belief.title} initial={{
                   opacity: 0,
@@ -210,11 +210,11 @@ AxiomAI was created to solve this gap — to provide the missing control layer t
           }} className="max-w-[600px] mb-16">
               <h2 className="text-[24px] sm:text-[32px] md:text-[40px] font-medium text-foreground leading-[1.2] mb-4">
                 We are committed to{" "}
-                <span className="text-[#f97415]">helping enterprises adopt AI responsibly</span>
-                {" "}— with clear standards, ethical use, and long-term sustainability.
+                <span className="text-[#f97415]">helping brands grow online</span>
+                {" "}— with honest advice, clear pricing, and work we're proud to sign.
               </h2>
               <p className="text-muted-foreground mt-6 max-w-[430px]">
-                As more enterprises adopt AI, AxiomAI is helping them avoid the typical AI pitfalls by simplifying AI with confidence.
+                As more business moves online, ice7 studio helps teams avoid the usual pitfalls — slow builds, generic design, and agencies that disappear after launch.
               </p>
             </motion.div>
 
@@ -261,13 +261,13 @@ AxiomAI was created to solve this gap — to provide the missing control layer t
                   Our commitment
                 </h3>
                 <p className="text-[16px] font-medium mb-6 text-foreground">
-                  Responsible AI at enterprise scale
+                  Craft at every scale
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We are committed to helping enterprises adopt AI responsibly — with clear standards, ethical use, and long-term sustainability.
+                  We are committed to raising the bar for what a studio partnership feels like — clear communication, honest timelines, and no black boxes.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  As more enterprises adopt AI, AxiomAI is helping them avoid the typical AI pitfalls by simplifying AI with confidence.
+                  Whether it's a landing page or a full platform, ice7 studio brings the same care, process, and accountability to every engagement.
                 </p>
               </motion.div>
               <motion.div initial={{
