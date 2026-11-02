@@ -5,7 +5,7 @@ import ctaBackground from "@/assets/cta-background.png";
 
 const CTASection = () => {
   return (
-    <section className="py-12 md:py-20 container mx-auto px-4">
+    <section className="py-24 md:py-36 container mx-auto px-4">
       <div 
         className="bg-cover bg-center bg-no-repeat rounded-[24px] h-[400px] sm:h-[480px] flex items-center justify-center relative overflow-hidden px-4"
         style={{ backgroundImage: `url(${ctaBackground})` }}

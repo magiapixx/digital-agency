@@ -110,9 +110,9 @@ const Contact = () => {
   return (
     <div className="min-h-dvh bg-background">
       <Header />
-      <main id="main-content" tabIndex={-1} className="pt-32 pb-12 md:pb-16">
+      <main id="main-content" tabIndex={-1} className="pt-44 pb-12 md:pb-28">
         {/* Hero Section */}
-        <section className="container mx-auto px-4 mb-12 md:mb-16">
+        <section className="container mx-auto px-4 mb-20 md:mb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

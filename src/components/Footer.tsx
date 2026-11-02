@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="bg-[#F7F8F7] rounded-[24px] px-6 md:px-8 pt-12 pb-6 lg:px-12">
         {/* Top Section */}
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-12 mb-12 lg:mb-16">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-12 mb-20 lg:mb-24">
           {/* Logo - Left */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">

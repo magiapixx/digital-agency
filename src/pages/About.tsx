@@ -41,7 +41,7 @@ const About = () => {
       <Header />
       <main id="main-content" tabIndex={-1}>
         {/* Hero Section */}
-        <section className="pt-32 pb-12 md:pb-16">
+        <section className="pt-44 pb-12 md:pb-28">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div initial={{
@@ -85,7 +85,7 @@ const About = () => {
         </section>
 
         {/* Mission Statement Section */}
-        <section className="py-12 md:py-20">
+        <section className="py-24 md:py-36">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <motion.div initial={{
@@ -133,7 +133,7 @@ ice7 studio was created to close that gap — one dedicated team for strategy, d
         </section>
 
         {/* What We Believe Section */}
-        <section className="py-12 md:py-20">
+        <section className="py-24 md:py-36">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <motion.div initial={{
@@ -195,7 +195,7 @@ ice7 studio was created to close that gap — one dedicated team for strategy, d
         </section>
 
         {/* Stats Section */}
-        <section className="py-12 md:py-20">
+        <section className="py-24 md:py-36">
           <div className="container mx-auto px-4">
           <motion.div initial={{
             opacity: 0,
@@ -207,7 +207,7 @@ ice7 studio was created to close that gap — one dedicated team for strategy, d
             duration: 0.6
           }} viewport={{
             once: true
-          }} className="max-w-[600px] mb-16">
+          }} className="max-w-[600px] mb-24">
               <h2 className="text-[24px] sm:text-[32px] md:text-[40px] font-medium text-foreground leading-[1.2] mb-4">
                 We are committed to{" "}
                 <span className="text-[#f97415]">helping brands grow online</span>
@@ -243,7 +243,7 @@ ice7 studio was created to close that gap — one dedicated team for strategy, d
         </section>
 
         {/* Commitment Section */}
-        <section className="py-12 md:py-20">
+        <section className="py-24 md:py-36">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <motion.div initial={{

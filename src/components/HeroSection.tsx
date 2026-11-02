@@ -6,13 +6,13 @@ import LogoStrip from "@/components/LogoStrip";
 
 const HeroSection = () => {
   return (
-    <section className="relative pb-12 md:pb-16 overflow-hidden bg-background">
+    <section className="relative pb-20 md:pb-40 overflow-hidden bg-background">
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-4xl mx-auto mb-8"
+          className="text-center max-w-4xl mx-auto mb-14"
         >
           {/* Main Headline */}
           <h1 className="text-[44px] sm:text-[60px] md:text-[76px] font-medium text-foreground leading-none mb-6 text-balance">
@@ -42,7 +42,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative mt-8 mb-12"
+          className="relative mt-14 mb-28"
         >
           <div className="w-full max-w-[1280px] h-[500px] overflow-hidden rounded-[24px] flex items-center justify-center">
             <video

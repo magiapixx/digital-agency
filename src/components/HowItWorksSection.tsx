@@ -46,7 +46,7 @@ const HowItWorksSection = () => {
 
     return () => clearInterval(interval);
   }, [goToNext]);
-  return <section className="py-12 md:py-20 bg-background">
+  return <section className="py-24 md:py-36 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <motion.div initial={{
@@ -57,7 +57,7 @@ const HowItWorksSection = () => {
         y: 0
       }} viewport={{
         once: true
-      }} className="mb-12">
+      }} className="mb-20">
           <div className="inline-block px-6 py-2 bg-[#F6F8F7] border border-[#E8E8E8] rounded-[100px] mb-2">
             <p className="text-[12px] font-medium text-[#1F2420]">
               // Product explanation //

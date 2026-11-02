@@ -49,14 +49,14 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-12 md:py-20 bg-background">
+    <section className="py-24 md:py-36 bg-background">
       <div className="container mx-auto px-4">
         {/* Featured Testimonial */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-24"
         >
           <h3 className="text-2xl md:text-3xl lg:text-[48px] lg:leading-none font-medium text-foreground leading-[1.2] mb-8 max-w-4xl mx-auto">
             "ice7 studio rebuilt our brand and website — organic traffic doubled within three months"

@@ -29,7 +29,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="contact" className="py-12 md:py-20 bg-background">
+    <section id="contact" className="py-24 md:py-36 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left Column - Header */}
