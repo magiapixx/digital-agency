@@ -44,7 +44,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative mt-14 mb-28"
         >
-          <div className="w-full max-w-[1280px] h-[500px] overflow-hidden rounded-[24px] flex items-center justify-center">
+          <div className="w-full h-[500px] overflow-hidden rounded-[24px] flex items-center justify-center">
             <video
               src={heroVideo}
               autoPlay
