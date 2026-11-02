@@ -33,10 +33,12 @@ const App = () => (
       <AuthProvider>
         <Toaster />
         <Sonner />
+        <PageLoader />
         <BrowserRouter>
           <ScrollToTop />
           <SkipLink />
-          <Routes>
+          <PageTransition>
+            <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
