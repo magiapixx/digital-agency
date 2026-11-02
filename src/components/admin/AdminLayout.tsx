@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { File01Icon, Tag01Icon, Mail01Icon, UserGroupIcon, Logout03Icon, SidebarLeftIcon, SidebarRightIcon } from "hugeicons-react";
 import { motion } from "framer-motion";
 import { useAuth } from "@/hooks/useAuth";
-import axiomLogo from "@/assets/axiom-logo.svg";
+import Logo from "@/components/Logo";
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarProvider, useSidebar } from "@/components/ui/sidebar";
 
 const navItems = [{
@@ -81,7 +81,7 @@ const AdminLayoutContent = ({
         {/* Logo Header */}
         <SidebarHeader className="p-6 pb-8 flex flex-row items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={axiomLogo} alt="AxiomAI" className="h-10" />
+            <Logo className="text-[22px]" />
           </Link>
           <SidebarToggle />
         </SidebarHeader>

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import axiomLogo from "@/assets/axiom-logo.svg";
+import Logo from "@/components/Logo";
 import heroVideo from "@/assets/login-video.mp4";
 
 const passwordSchema = z
@@ -108,7 +108,7 @@ const ResetPassword = () => {
           </div>
           {/* Logo */}
           <Link to="/" className="flex items-center mb-8 sm:mb-12 lg:mb-20">
-            <img src={axiomLogo} alt="AxiomAI" className="w-[100px] sm:w-[120px]" />
+            <Logo className="text-[22px]" />
           </Link>
 
           {/* Form container */}
