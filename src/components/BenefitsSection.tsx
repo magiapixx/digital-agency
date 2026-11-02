@@ -1,27 +1,27 @@
 import { motion } from "framer-motion";
 const benefits = [{
-  title: "Optimized AI Costs",
-  description: "Control and predict AI spending with centralized management and usage insights.",
+  title: "Faster launch times",
+  description: "Get to market in weeks, not quarters, with a team that ships every sprint.",
   filled: 1
 }, {
-  title: "Accelerated AI Deployment",
-  description: "Move AI solutions from pilot to production faster with standardized, enterprise-ready infrastructure.",
+  title: "Higher conversion rates",
+  description: "Design and copy built around what your visitors actually need to say yes.",
   filled: 2
 }, {
-  title: "Reduced Compliance Risk",
-  description: "Protect enterprise data with built-in security, governance, and auditability across all AI usage.",
+  title: "Stronger brand presence",
+  description: "A cohesive identity across web, product, and every touchpoint in between.",
   filled: 4
 }, {
-  title: "Centralized Governance",
-  description: "Monitor AI usage, performance, and cost across teams from a single control layer.",
+  title: "Lower acquisition costs",
+  description: "SEO, performance, and UX improvements that compound month after month.",
   filled: 4
 }, {
-  title: "Scalable Adoption Across Teams",
-  description: "Enable secure AI usage across departments without creating silos or operational friction.",
+  title: "Scalable foundations",
+  description: "Sites and systems built to grow with you — no rebuild every two years.",
   filled: 5
 }, {
-  title: "Executive-Level Confidence",
-  description: "Provide leadership with transparency, accountability, and control over enterprise AI initiatives.",
+  title: "A partner, not a vendor",
+  description: "One dedicated team that knows your business and is invested in your results.",
   filled: 6
 }];
 const ProgressIndicator = ({
@@ -67,9 +67,9 @@ const BenefitsSection = () => {
           }} transition={{
             delay: 0.1
           }} className="text-2xl md:text-3xl lg:text-[40px] font-medium text-foreground leading-tight">
-              Measurable business value{" "}
+              Real results,{" "}
               <br />
-              from enterprise AI
+              project after project
             </motion.h2>
           </div>
         <motion.div initial={{
@@ -84,9 +84,9 @@ const BenefitsSection = () => {
           delay: 0.2
         }} className="flex items-end justify-start lg:justify-end">
             <p className="text-base font-light text-muted-foreground max-w-lg">
-              AxiomAI helps organizations move from fragmented AI initiatives to a governed, scalable 
-              AI capability — delivering operational efficiency, reduced risk, and faster time to value 
-              across the enterprise.
+              ice7 studio helps brands move from scattered ideas to a digital presence
+              that performs — delivering faster launches, stronger brands, and measurable
+              growth with every engagement.
             </p>
           </motion.div>
         </div>

@@ -5,18 +5,18 @@ import looper2 from "@/assets/looper-2.png";
 import looper3 from "@/assets/looper-3.png";
 const features = [{
   icon: ColorsIcon,
-  title: "AI model orchestration",
-  description: "Deploy, manage, and route multiple AI models across use cases and teams.",
+  title: "Web design & development",
+  description: "Fast, beautiful websites and web apps — designed and built end to end.",
   meshType: "spiral"
 }, {
   icon: AiSecurity01Icon,
-  title: "Security and compliance built in",
-  description: "SOC 2, ISO 27001 ready. Data isolation, audit logs, and role-based access control.",
+  title: "Branding & identity",
+  description: "Logos, visual systems, and guidelines that make your brand unmistakable.",
   meshType: "wave"
 }, {
   icon: Layers01Icon,
-  title: "Enterprise integrations",
-  description: "Integrate AI directly into existing enterprise systems and processes.",
+  title: "Growth & digital marketing",
+  description: "SEO, content, and campaigns that turn visitors into loyal customers.",
   meshType: "flow"
 }];
 
@@ -45,7 +45,7 @@ const FeaturesSection = () => {
             once: true
           }} className="inline-block px-6 py-2 bg-[#F6F8F7] border border-[#E8E8E8] rounded-[100px] mb-2">
               <p className="text-[12px] font-medium text-[#1F2420]">
-                // Key Features //
+                // What we do //
               </p>
             </motion.div>
             <motion.h2 initial={{
@@ -59,9 +59,9 @@ const FeaturesSection = () => {
           }} transition={{
             delay: 0.1
           }} className="text-2xl md:text-3xl lg:text-[40px] font-medium text-foreground leading-tight">
-              Built for control.{" "}
+              Full-service.{" "}
               <br />
-              Designed to scale
+              Built for growth
             </motion.h2>
           </div>
         <motion.div initial={{
@@ -76,9 +76,9 @@ const FeaturesSection = () => {
           delay: 0.2
         }} className="flex items-end justify-start lg:justify-end">
             <p className="text-[#59605A] max-w-lg">
-              Gain full control over how AI is deployed, accessed, and used across your organization. 
-              Standardize AI workflows, enforce security and compliance policies, and scale adoption 
-              confidently without sacrificing transparency or performance.
+              We help ambitious companies launch, refresh, and grow their digital presence.
+              From first sketches to shipped products, one team handles strategy, design,
+              development, and the ongoing work that keeps you moving forward.
             </p>
           </motion.div>
         </div>
