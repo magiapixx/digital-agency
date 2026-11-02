@@ -1,6 +1,6 @@
-# AxiomAI — SaaS landing page template
+# ice7 studio — digital agency site
 
-A marketing site for a fictional enterprise AI product, with a real blog and an admin CMS. Built with React, Vite, Tailwind and Lovable Cloud.
+A marketing site for a digital agency called ice7 studio, with a real blog and an admin CMS. Built with React, Vite, Tailwind and Lovable Cloud.
 
 ## Public pages
 - `/` — home: hero video, features, pricing (monthly/yearly), testimonials, FAQ

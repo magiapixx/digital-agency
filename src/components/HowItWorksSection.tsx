@@ -4,17 +4,17 @@ import { CheckmarkCircle02Icon } from "hugeicons-react";
 import scrollTunnelVideo from "@/assets/scroll-tunnel.mp4";
 
 const steps = [{
-  title: "Unified AI Governance",
-  description: "AxiomAI centralizes all AI initiatives into a single governed framework, ensuring compliance, security, and ethical standards across the organization. This gives leadership clear visibility and control over AI projects while reducing operational risks."
+  title: "Discover",
+  description: "We start with your goals, audience, and market. Together we define what success looks like, so every design and line of code serves a purpose from day one."
 }, {
-  title: "Scalable AI Infrastructure",
-  description: "Built on enterprise-grade infrastructure that scales with your needs, ensuring reliable performance at any volume."
+  title: "Design",
+  description: "We craft your brand identity and user experience — wireframes, visual design, and prototypes — and refine them with your feedback until they feel right."
 }, {
-  title: "Accelerated Deployment & Time-to-Value",
-  description: "Deploy AI solutions faster with pre-built templates, automated workflows, and streamlined integration processes."
+  title: "Build",
+  description: "Our developers turn approved designs into fast, accessible, production-ready websites and apps, tested across devices and browsers before launch."
 }, {
-  title: "Operational Efficiency & Optimization",
-  description: "Maximize ROI with intelligent resource allocation, cost optimization, and continuous performance monitoring."
+  title: "Grow",
+  description: "After launch we keep improving — SEO, content, conversion optimization, and ongoing design and development support as your business evolves."
 }];
 
 const TIMER_DURATION = 10000; // 10 seconds
@@ -64,7 +64,7 @@ const HowItWorksSection = () => {
             </p>
           </div>
           <h2 className="text-2xl md:text-3xl lg:text-[40px] font-medium text-foreground">
-            How AxiomAI works
+            How we work
           </h2>
         </motion.div>
 

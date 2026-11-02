@@ -210,13 +210,13 @@ const Blog = () => {
         duration: 0.6
       }} className="text-center mb-16">
           <span className="inline-block mb-6 text-sm text-muted-foreground bg-muted/50 border border-border rounded-full py-[4px] px-[12px] font-light">
-            AxiomAI's blog
+            ice7 studio journal
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
             Blog & Insights
           </h1>
           <p className="text-base text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            Explore innovative strategies, insights, and a wealth of inspiration every week on the AxiomAI blog, where we empower businesses with cutting-edge AI solutions.
+            Ideas on design, development, and digital growth — fresh from the ice7 studio team every week.
           </p>
         </motion.div>
 

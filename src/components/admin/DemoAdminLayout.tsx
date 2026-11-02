@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { File01Icon, Tag01Icon, UserGroupIcon, Logout03Icon, SidebarLeftIcon, SidebarRightIcon } from "hugeicons-react";
 import { motion } from "framer-motion";
-import axiomLogo from "@/assets/axiom-logo.svg";
+import Logo from "@/components/Logo";
 import {
   Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent,
   SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem,
@@ -59,7 +59,7 @@ const Inner = ({ children, title, description }: Props) => {
         <nav aria-label="Demo admin" className="flex h-full min-h-0 flex-col">
         <SidebarHeader className="p-6 pb-8 flex flex-row items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={axiomLogo} alt="AxiomAI" className="h-10" />
+            <Logo className="text-[22px]" />
           </Link>
           <SidebarToggle />
         </SidebarHeader>
@@ -94,7 +94,7 @@ const Inner = ({ children, title, description }: Props) => {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium text-foreground truncate">Demo admin</p>
-              <p className="text-xs text-muted-foreground truncate">demo@axiom.ai</p>
+              <p className="text-xs text-muted-foreground truncate">demo@ice7.studio</p>
             </div>
             <Link to="/" aria-label="Exit demo" title="Exit demo" className="p-2 text-muted-foreground hover:text-foreground transition-colors">
               <Logout03Icon className="w-[18px] h-[18px]" />

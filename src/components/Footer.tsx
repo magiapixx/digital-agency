@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import axiomLogo from "@/assets/axiom-logo.svg";
+import Logo from "@/components/Logo";
 const Footer = () => {
   const navLinks = [{
     label: "About",
@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Logo - Left */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src={axiomLogo} alt="AxiomAI" className="w-[120px]" />
+              <Logo className="text-[22px]" />
             </Link>
           </div>
 
@@ -53,7 +53,7 @@ const Footer = () => {
           {/* Bottom Row */}
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <p className="text-[13px] sm:text-[14px] text-foreground">
-              © 2026 AxiomAI. All rights reserved.
+              © 2026 ice7 studio. All rights reserved.
             </p>
           </div>
         </div>

@@ -5,20 +5,20 @@ import enterpriseVideo from "@/assets/enterprise-ball.mp4";
 
 const features = [
   {
-    title: "Technology & AI leadership",
-    description: "Standardize AI usage across the organization",
+    title: "Startups & founders",
+    description: "Launch a brand and site that punch above your weight",
   },
   {
-    title: "Security & compliance teams",
-    description: "Ensure data protection, governance, and regulatory alignment",
+    title: "Scale-ups",
+    description: "Rebuild and grow your presence as your business expands",
   },
   {
-    title: "Operations & knowledge teams",
-    description: "Augment workflows with secure, reliable AI",
+    title: "Established brands",
+    description: "Refresh identity, website, and campaigns without losing equity",
   },
   {
-    title: "Product & engineering teams",
-    description: "Embed AI into enterprise products and services",
+    title: "Marketing teams",
+    description: "Extend your team with design, dev, and SEO capacity",
   },
 ];
 
@@ -39,7 +39,7 @@ const EnterpriseSection = () => {
             </p>
           </div>
           <h2 className="text-2xl md:text-3xl lg:text-[40px] font-medium text-foreground leading-tight">
-            Designed for enterprise AI adoption
+            Made for teams that want to grow online
           </h2>
         </motion.div>
 
@@ -61,12 +61,12 @@ const EnterpriseSection = () => {
             />
             {/* Floating card */}
             <div className="absolute bottom-4 left-4 right-4 md:bottom-8 md:right-8 md:left-auto bg-background rounded-[16px] p-6 shadow-lg md:max-w-[320px]">
-              <p className="text-[20px] font-semibold text-foreground mb-2">Get started in minutes</p>
+              <p className="text-[20px] font-semibold text-foreground mb-2">Start your project</p>
               <p className="text-[15px] text-muted-foreground mb-6 leading-relaxed">
-                Explore the platform, review enterprise capabilities, and understand how AI can be deployed safely across your organization
+                Tell us about your goals and we'll scope a plan that fits your timeline and budget
               </p>
               <Button asChild variant="lime" size="default" className="rounded-full px-8">
-                <Link to="/contact">TALK TO SALES</Link>
+                <Link to="/contact">START A PROJECT</Link>
               </Button>
             </div>
           </div>

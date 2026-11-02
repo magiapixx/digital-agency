@@ -90,8 +90,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "hello@axiom.ai",
-      link: "mailto:hello@axiom.ai",
+      details: "hello@ice7studio.com",
+      link: "mailto:hello@ice7studio.com",
     },
     {
       icon: Phone,
@@ -101,8 +101,8 @@ const Contact = () => {
     },
     {
       icon: MapPin,
-      title: "Office",
-      details: "123 Innovation Drive, San Francisco, CA 94105",
+      title: "Studio",
+      details: "Suite 7, 42 Creative Lane, Portland, OR 97205",
       link: null,
     },
   ];
@@ -123,7 +123,7 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Have questions about Axiom? We'd love to hear from you. Send us a
+              Have a project in mind? We'd love to hear about it. Send us a
               message and we'll respond as soon as possible.
             </p>
           </motion.div>

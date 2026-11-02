@@ -4,20 +4,20 @@ import { AddCircleIcon, MinusSignCircleIcon } from "hugeicons-react";
 
 const faqs = [
   {
-    question: "Can AxiomAI run in our private environment?",
-    answer: "Yes. We support private cloud, VPC, and on-premise deployments",
+    question: "How long does a typical project take?",
+    answer: "A brand refresh usually takes 3–4 weeks; a full website launch typically runs 6–10 weeks depending on scope. We agree on a timeline before we start and share progress every week.",
   },
   {
-    question: "How do you handle data privacy?",
-    answer: "AxiomAI is designed with privacy-first principles. We offer data encryption at rest and in transit, role-based access controls, and compliance with major regulations including GDPR, HIPAA, and SOC 2.",
+    question: "Can you work with our existing brand or website?",
+    answer: "Absolutely. We regularly evolve existing brands and rebuild existing sites — keeping what works, fixing what doesn't, and never throwing away equity you've built.",
   },
   {
-    question: "Does it support multiple AI models?",
-    answer: "Absolutely. AxiomAI provides a unified interface to orchestrate and manage multiple AI models from various providers, including OpenAI, Anthropic, and custom models.",
+    question: "What does a project cost?",
+    answer: "Every project is scoped individually. One-off projects start from a few thousand dollars, and monthly plans begin at $249 for ongoing care and support. Reach out and we'll prepare a clear, fixed quote.",
   },
   {
-    question: "Is AxiomAI compliant with enterprise standards?",
-    answer: "Yes. We maintain SOC 2 Type II certification, ISO 27001 compliance, and support HIPAA BAA agreements for healthcare organizations.",
+    question: "Do you support us after launch?",
+    answer: "Yes. Every project includes a post-launch support window, and our monthly plans cover hosting, updates, SEO, and continuous improvement — so your site keeps performing long after launch day.",
   },
 ];
 
