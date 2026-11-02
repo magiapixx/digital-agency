@@ -92,7 +92,7 @@ const ResetPassword = () => {
   return (
     <div className="min-h-dvh bg-background relative">
       {/* Content container - centered with max-width */}
-      <div className="max-w-[1280px] mx-auto min-h-dvh flex">
+      <div className="w-[90%] mx-auto min-h-dvh flex">
         {/* Left side - Form */}
         <main id="main-content" tabIndex={-1} className="w-full lg:w-1/2 flex flex-col p-4 sm:p-6 lg:p-12 lg:pr-[180px]">
           {/* Video - decorative, positioned to cover right half of viewport */}
