@@ -21,6 +21,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import SkipLink from "./components/SkipLink";
 import PageLoader from "./components/PageLoader";
 import PageTransition from "./components/PageTransition";
+import SmoothScroll from "./components/SmoothScroll";
 import DemoAdminBlog from "./pages/demo/DemoAdminBlog";
 import DemoAdminCategories from "./pages/demo/DemoAdminCategories";
 import DemoAdminUsers from "./pages/demo/DemoAdminUsers";
@@ -36,6 +37,7 @@ const App = () => (
         <PageLoader />
         <BrowserRouter>
           <ScrollToTop />
+          <SmoothScroll />
           <SkipLink />
           <PageTransition>
             <Routes>
