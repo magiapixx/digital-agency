@@ -87,7 +87,8 @@ const App = () => (
             <Route path="/demo/admin/users" element={<DemoAdminUsers />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
-          </Routes>
+            </Routes>
+          </PageTransition>
         </BrowserRouter>
       </AuthProvider>
     </TooltipProvider>
