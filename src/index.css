@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Content containers span 90% of the viewport width */
+/* Content containers span 95% of the viewport width */
 .container {
-  width: 90%;
+  width: 95%;
   max-width: none;
 }
 
