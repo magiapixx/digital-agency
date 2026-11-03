@@ -6,20 +6,11 @@ import editingVideo from "@/assets/benefits/editing-timeline.mp4.asset.json";
 import editingPoster from "@/assets/benefits/editing-timeline.jpg.asset.json";
 import designVideo from "@/assets/benefits/design-colors.mp4.asset.json";
 import designPoster from "@/assets/benefits/design-colors.jpg.asset.json";
-import screenVideo from "@/assets/benefits/programming-screen.mp4.asset.json";
-import screenPoster from "@/assets/benefits/programming-screen.jpg.asset.json";
-import keyboardVideo from "@/assets/benefits/developer-keyboard.mp4.asset.json";
-import keyboardPoster from "@/assets/benefits/developer-keyboard.jpg.asset.json";
-import workspaceVideo from "@/assets/benefits/software-workspace.mp4.asset.json";
-import workspacePoster from "@/assets/benefits/software-workspace.jpg.asset.json";
 
 const media = [
   { src: codeVideo.url, poster: codePoster.url },
   { src: editingVideo.url, poster: editingPoster.url },
   { src: designVideo.url, poster: designPoster.url },
-  { src: screenVideo.url, poster: screenPoster.url },
-  { src: keyboardVideo.url, poster: keyboardPoster.url },
-  { src: workspaceVideo.url, poster: workspacePoster.url },
 ];
 const benefits = [{
   title: "Faster launch times",
@@ -33,18 +24,6 @@ const benefits = [{
   title: "Stronger brand presence",
   description: "A cohesive identity across web, product, and every touchpoint in between.",
   filled: 4
-}, {
-  title: "Lower acquisition costs",
-  description: "SEO, performance, and UX improvements that compound month after month.",
-  filled: 4
-}, {
-  title: "Scalable foundations",
-  description: "Sites and systems built to grow with you — no rebuild every two years.",
-  filled: 5
-}, {
-  title: "A partner, not a vendor",
-  description: "One dedicated team that knows your business and is invested in your results.",
-  filled: 6
 }];
 const ProgressIndicator = ({
   filled
@@ -113,8 +92,8 @@ const BenefitsSection = () => {
         </div>
       </div>
 
-      {/* Large 16:9 cards, 95% of viewport width, wide spacing */}
-      <div className="mx-auto flex w-[95%] flex-col gap-16 md:gap-32">
+      {/* Large 16:9 cards, 95% of viewport width */}
+      <div className="mx-auto flex w-[95%] flex-col gap-6 md:gap-10">
         {benefits.map((benefit, index) => <motion.div key={index} initial={{
         opacity: reducedMotion ? 1 : 0,
         y: reducedMotion ? 0 : 40
