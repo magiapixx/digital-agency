@@ -29,10 +29,10 @@ const ProgressIndicator = ({
 }: {
   filled: number;
 }) => {
-  return <div className="mb-6 flex items-start justify-end gap-[8px]">
+  return <div className="flex shrink-0 items-start justify-end gap-[8px] md:gap-[14px]">
       {Array.from({
       length: 6
-    }).map((_, i) => <div key={i} className={`w-[12px] h-[26px] rounded-full ${i < filled ? "bg-[#FF7732]" : "border-2 border-[#FF7732]/40 bg-transparent"}`} style={{
+    }).map((_, i) => <div key={i} className={`w-[14px] h-[34px] rounded-full md:w-[22px] md:h-[56px] ${i < filled ? "bg-accent" : "border-2 border-accent/40 bg-transparent"}`} style={{
       transform: "rotate(30deg)"
     }} />)}
     </div>;
@@ -51,8 +51,8 @@ const BenefitsSection = () => {
             y: 0
           }} viewport={{
             once: true
-          }} className="inline-block px-6 py-2 bg-[#F6F8F7] border border-[#E8E8E8] rounded-[100px] mb-2">
-              <p className="text-[12px] font-medium text-[#1F2420]">
+          }} className="inline-block px-6 py-2 bg-muted border border-border rounded-[100px] mb-2">
+              <p className="text-[12px] font-medium text-foreground">
                 // Benefits //
               </p>
             </motion.div>
@@ -90,31 +90,43 @@ const BenefitsSection = () => {
             </p>
           </motion.div>
         </div>
+      </div>
 
-        {/* Benefits Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 bg-[#F7F8F7] p-2 rounded-[24px]">
-          {benefits.map((benefit, index) => <motion.div key={index} initial={{
-          opacity: 0,
-          y: 30
-        }} whileInView={{
-          opacity: 1,
-          y: 0
-        }} viewport={{
-          once: true
-        }} transition={{
-          delay: index * 0.05
-        }} className="bg-background rounded-[20px] pt-5 px-5 pb-10 hover:shadow-lg transition-all" style={{
-          boxShadow: '0px 1px 4px rgba(12, 12, 13, 0.1), 0px 1px 4px rgba(12, 12, 13, 0.05)'
-        }}>
-              <ProgressIndicator filled={benefit.filled} />
-              <h3 className="text-[18px] font-semibold text-foreground mb-2 leading-tight">
-                {benefit.title}
-              </h3>
-              <p className="text-[15px] text-muted-foreground leading-relaxed">
-                {benefit.description}
-              </p>
-            </motion.div>)}
-        </div>
+      {/* Large 16:9 cards, 95% of viewport width, wide spacing */}
+      <div className="mx-auto flex w-[95%] flex-col gap-16 md:gap-32">
+        {benefits.map((benefit, index) => <motion.div key={index} initial={{
+        opacity: 0,
+        y: 40
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true,
+        margin: "-100px"
+      }} transition={{
+        delay: index * 0.05,
+        duration: 0.6
+      }} className="group relative min-h-[420px] overflow-hidden rounded-[28px] border border-border bg-card shadow-[0_2px_24px_rgba(12,12,13,0.06)] transition-shadow duration-500 hover:shadow-[0_16px_60px_rgba(12,12,13,0.10)] md:aspect-[16/9] md:min-h-0 md:rounded-[40px]">
+            <div className="relative flex h-full flex-col justify-between gap-10 p-8 md:p-14 lg:p-20">
+              <div className="flex items-start justify-between gap-8">
+                <span className="text-[13px] font-medium uppercase tracking-[0.28em] text-muted-foreground/70 md:text-[15px]">
+                  {String(index + 1).padStart(2, "0")} — Benefit
+                </span>
+                <ProgressIndicator filled={benefit.filled} />
+              </div>
+
+              <div className="max-w-4xl">
+                <h3 className="mb-4 text-[28px] font-medium leading-[1.05] text-foreground md:mb-6 md:text-[44px] lg:text-[60px]">
+                  {benefit.title}
+                </h3>
+                <p className="max-w-2xl text-[15px] leading-relaxed text-muted-foreground md:text-[20px]">
+                  {benefit.description}
+                </p>
+              </div>
+
+              <div className="absolute inset-x-8 bottom-0 h-[3px] origin-left scale-x-0 bg-accent transition-transform duration-700 group-hover:scale-x-100 md:inset-x-14" />
+            </div>
+          </motion.div>)}
       </div>
     </section>;
 };
