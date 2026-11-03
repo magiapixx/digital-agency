@@ -39,4 +39,6 @@ responsive at 375/768/1024/1440 — plus the blog clear-search label.
 
 ## Open
 
-- None.
+- [ ] Add verified free-license software videos to all benefit cards.
+- [ ] Reduce card typography and indicators; match hero corner radius.
+- [ ] Verify video playback, readable content, and card dimensions.
