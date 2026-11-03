@@ -92,8 +92,8 @@ const BenefitsSection = () => {
         </div>
       </div>
 
-      {/* Large 16:9 cards, 95% of viewport width */}
-      <div className="mx-auto flex w-[95%] flex-col gap-6 md:gap-10">
+      {/* Large cards, same width as the hero card (95% - px-4 padding) */}
+      <div className="mx-auto flex w-[calc(95%-2rem)] flex-col gap-6 md:gap-10">
         {benefits.map((benefit, index) => <motion.div key={index} initial={{
         opacity: reducedMotion ? 1 : 0,
         y: reducedMotion ? 0 : 40
@@ -106,10 +106,10 @@ const BenefitsSection = () => {
       }} transition={{
         delay: index * 0.05,
         duration: 0.6
-      }} className="benefit-card group relative min-h-[360px] overflow-hidden rounded-[24px] bg-card transition-shadow duration-500 md:aspect-[16/9] md:min-h-0">
+      }} className="benefit-card group relative aspect-[3/4] overflow-hidden rounded-[24px] bg-card transition-shadow duration-500 lg:aspect-[10/9]">
             {media[index] && <BenefitVideo src={media[index].src} poster={media[index].poster} />}
             <div aria-hidden="true" className="benefit-card-overlay absolute inset-0" />
-            <div className="relative flex h-full min-h-[360px] flex-col justify-between gap-10 p-6 md:min-h-0 md:p-12 lg:p-16">
+            <div className="relative flex h-full flex-col justify-between gap-10 p-6 md:p-12 lg:p-16">
               <div className="flex items-start justify-between gap-8">
                 <span className="text-[10px] font-medium uppercase tracking-normal opacity-80 md:text-xs">
                   {String(index + 1).padStart(2, "0")} — Benefit
