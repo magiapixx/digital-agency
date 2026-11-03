@@ -1,4 +1,26 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
+import BenefitVideo from "@/components/BenefitVideo";
+import codeVideo from "@/assets/benefits/software-code.mp4.asset.json";
+import codePoster from "@/assets/benefits/software-code.jpg.asset.json";
+import editingVideo from "@/assets/benefits/editing-timeline.mp4.asset.json";
+import editingPoster from "@/assets/benefits/editing-timeline.jpg.asset.json";
+import designVideo from "@/assets/benefits/design-colors.mp4.asset.json";
+import designPoster from "@/assets/benefits/design-colors.jpg.asset.json";
+import screenVideo from "@/assets/benefits/programming-screen.mp4.asset.json";
+import screenPoster from "@/assets/benefits/programming-screen.jpg.asset.json";
+import keyboardVideo from "@/assets/benefits/developer-keyboard.mp4.asset.json";
+import keyboardPoster from "@/assets/benefits/developer-keyboard.jpg.asset.json";
+import workspaceVideo from "@/assets/benefits/software-workspace.mp4.asset.json";
+import workspacePoster from "@/assets/benefits/software-workspace.jpg.asset.json";
+
+const media = [
+  { src: codeVideo.url, poster: codePoster.url },
+  { src: editingVideo.url, poster: editingPoster.url },
+  { src: designVideo.url, poster: designPoster.url },
+  { src: screenVideo.url, poster: screenPoster.url },
+  { src: keyboardVideo.url, poster: keyboardPoster.url },
+  { src: workspaceVideo.url, poster: workspacePoster.url },
+];
 const benefits = [{
   title: "Faster launch times",
   description: "Get to market in weeks, not quarters, with a team that ships every sprint.",
@@ -29,15 +51,14 @@ const ProgressIndicator = ({
 }: {
   filled: number;
 }) => {
-  return <div className="flex shrink-0 items-start justify-end gap-[8px] md:gap-[14px]">
+  return <div aria-hidden="true" className="flex shrink-0 items-start justify-end gap-1.5 md:gap-2">
       {Array.from({
       length: 6
-    }).map((_, i) => <div key={i} className={`w-[14px] h-[34px] rounded-full md:w-[22px] md:h-[56px] ${i < filled ? "bg-accent" : "border-2 border-accent/40 bg-transparent"}`} style={{
-      transform: "rotate(30deg)"
-    }} />)}
+    }).map((_, i) => <div key={i} className={`h-5 w-2 rotate-[30deg] rounded-full md:h-7 md:w-2.5 ${i < filled ? "bg-accent" : "border border-accent/70 bg-transparent"}`} />)}
     </div>;
 };
 const BenefitsSection = () => {
+  const reducedMotion = useReducedMotion();
   return <section className="py-24 md:py-36 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -95,8 +116,8 @@ const BenefitsSection = () => {
       {/* Large 16:9 cards, 95% of viewport width, wide spacing */}
       <div className="mx-auto flex w-[95%] flex-col gap-16 md:gap-32">
         {benefits.map((benefit, index) => <motion.div key={index} initial={{
-        opacity: 0,
-        y: 40
+        opacity: reducedMotion ? 1 : 0,
+        y: reducedMotion ? 0 : 40
       }} whileInView={{
         opacity: 1,
         y: 0
@@ -106,20 +127,22 @@ const BenefitsSection = () => {
       }} transition={{
         delay: index * 0.05,
         duration: 0.6
-      }} className="group relative min-h-[420px] overflow-hidden rounded-[28px] border border-border bg-card shadow-[0_2px_24px_rgba(12,12,13,0.06)] transition-shadow duration-500 hover:shadow-[0_16px_60px_rgba(12,12,13,0.10)] md:aspect-[16/9] md:min-h-0 md:rounded-[40px]">
-            <div className="relative flex h-full flex-col justify-between gap-10 p-8 md:p-14 lg:p-20">
+      }} className="benefit-card group relative min-h-[360px] overflow-hidden rounded-[24px] bg-card transition-shadow duration-500 md:aspect-[16/9] md:min-h-0">
+            {media[index] && <BenefitVideo src={media[index].src} poster={media[index].poster} />}
+            <div aria-hidden="true" className="benefit-card-overlay absolute inset-0" />
+            <div className="relative flex h-full min-h-[360px] flex-col justify-between gap-10 p-6 md:min-h-0 md:p-12 lg:p-16">
               <div className="flex items-start justify-between gap-8">
-                <span className="text-[13px] font-medium uppercase tracking-[0.28em] text-muted-foreground/70 md:text-[15px]">
+                <span className="text-[10px] font-medium uppercase tracking-normal opacity-80 md:text-xs">
                   {String(index + 1).padStart(2, "0")} — Benefit
                 </span>
                 <ProgressIndicator filled={benefit.filled} />
               </div>
 
               <div className="max-w-4xl">
-                <h3 className="mb-4 text-[28px] font-medium leading-[1.05] text-foreground md:mb-6 md:text-[44px] lg:text-[60px]">
+                <h3 className="mb-3 text-2xl font-medium leading-tight md:text-3xl lg:text-4xl">
                   {benefit.title}
                 </h3>
-                <p className="max-w-2xl text-[15px] leading-relaxed text-muted-foreground md:text-[20px]">
+                <p className="max-w-lg text-sm leading-relaxed opacity-85 md:text-base">
                   {benefit.description}
                 </p>
               </div>

@@ -41,6 +41,11 @@
     --radius: 0.75rem;
 
     /* Custom tokens */
+    --media-foreground: 0 0% 100%;
+    --media-scrim: 0 0% 0%;
+    --benefit-overlay: linear-gradient(180deg, hsl(var(--media-scrim) / 0.4) 0%, hsl(var(--media-scrim) / 0.16) 35%, hsl(var(--media-scrim) / 0.82) 100%);
+    --shadow-benefit: 0 2px 24px hsl(var(--media-scrim) / 0.06);
+    --shadow-benefit-hover: 0 16px 60px hsl(var(--media-scrim) / 0.1);
     --lime: 17 97% 52%;
     --lime-light: 17 97% 60%;
     --lime-dark: 17 97% 45%;
@@ -313,6 +318,17 @@ section[id] {
 }
 
 /* Appear-on-scroll animation */
+.benefit-card {
+  color: hsl(var(--media-foreground));
+  box-shadow: var(--shadow-benefit);
+}
+.benefit-card:hover {
+  box-shadow: var(--shadow-benefit-hover);
+}
+.benefit-card-overlay {
+  background: var(--benefit-overlay);
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(28px);

@@ -39,4 +39,6 @@ responsive at 375/768/1024/1440 — plus the blog clear-search label.
 
 ## Open
 
-- None.
+- [x] Add verified free-license software videos to all benefit cards (Mixkit Free License; sources recorded with assets).
+- [x] Reduce card typography and indicators; match hero corner radius (24px).
+- [x] Verify video playback, readable content, and card dimensions (six moving videos, 95% width and 16:9 desktop, mobile fit, reduced-motion static posters). Local browser tests fetch asset requests through the hosted preview because the local dev server does not serve the asset proxy.
