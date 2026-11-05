@@ -2,6 +2,10 @@
 
 A marketing site for a digital agency called ice7 studio, with a real blog and an admin CMS. Built with React, Vite, Tailwind and Lovable Cloud.
 
+## Homepage
+
+![ice7 studio homepage](public/homepage.png)
+
 ## Public pages
 - `/` — home: hero video, features, pricing (monthly/yearly), testimonials, FAQ
 - `/about`, `/contact`
